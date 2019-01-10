@@ -1,0 +1,20 @@
+<nav ngClass="{{_navClass}}" *ngIf="_navPrimary">
+  <ul>
+    <li *ngFor="let navItem of navArr; index as i;" [routerLinkActive]="'current'" [class.contains-sub-menu]="navItem.childNav">
+      <a [routerLink]="navItem.navRoute">{{ navItem.navLabel }}</a>
+      <ul class="sub-menu" *ngIf="navItem.childNav">
+        <li *ngFor="let childNavItem of navArr[i].childNav" [routerLinkActive]="'current'">
+          <a [routerLink]="childNavItem.navRoute">{{ childNavItem.navLabel }}</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+<nav ngClass="{{_navClass}}" *ngIf="!_navPrimary">
+  <ul>
+    <li class="v-align-middle">
+      <a href="login.html" class="button small rounded no-page-fade no-margin-bottom">Log In</a>
+    </li>
+  </ul>
+</nav>
