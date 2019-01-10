@@ -12,8 +12,8 @@ export interface NavArray {
   styleUrls: ['./navigation.component.sass']
 })
 export class NavigationComponent implements OnInit {
-  @Input() private _navClass: string;
-  @Input() private _navPrimary: boolean;
+  @Input() public _navClass: string;
+  @Input() public _navPrimary: boolean;
   public navArr = [];
   constructor() {
     this.navArr = [
