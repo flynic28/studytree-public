@@ -3,13 +3,14 @@ import { Component, OnInit, Input } from '@angular/core';
 export interface NavArray {
   navRoute: string;
   navLabel: string;
+  noClick?: boolean;
   childNav?: NavArray[];
 }
 
 @Component({
   selector: 'app-navigation',
   templateUrl: './navigation.component.html',
-  styleUrls: ['./navigation.component.sass']
+  styleUrls: ['./navigation.component.scss']
 })
 export class NavigationComponent implements OnInit {
   @Input() public _navClass: string;
@@ -18,8 +19,9 @@ export class NavigationComponent implements OnInit {
   constructor() {
     this.navArr = [
       {
-        navRoute: '#',
+        navRoute: '',
         navLabel: 'Why StudyTree',
+        noClick: true,
         childNav: [
           {
             navRoute: 'our-science',
@@ -30,8 +32,9 @@ export class NavigationComponent implements OnInit {
           }
         ]
       }, {
-        navRoute: '#',
+        navRoute: '',
         navLabel: 'Platform',
+        noClick: true,
         childNav: [
           {
             navRoute: 'higher-education',
@@ -55,6 +58,11 @@ export class NavigationComponent implements OnInit {
   }
 
   ngOnInit() {
+  }
+
+  navClick(event) {
+    event.stopPropogation();
+    return false;
   }
 
 }

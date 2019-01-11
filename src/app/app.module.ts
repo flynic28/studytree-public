@@ -10,6 +10,8 @@ import { OverlayNavigationComponent } from './shared/layout/overlay-navigation/o
 
 import { HomeComponent } from './home/home.component';
 import { OurScienceComponent } from './our-science/our-science.component';
+import { MeetLeonComponent } from './meet-leon/meet-leon.component';
+import { HeroComponent } from './shared/hero/hero.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +21,9 @@ import { OurScienceComponent } from './our-science/our-science.component';
     HomeComponent,
     OurScienceComponent,
     NavigationComponent,
-    OverlayNavigationComponent
+    OverlayNavigationComponent,
+    MeetLeonComponent,
+    HeroComponent
   ],
   imports: [
     BrowserModule,

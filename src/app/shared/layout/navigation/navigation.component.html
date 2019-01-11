@@ -1,7 +1,8 @@
 <nav ngClass="{{_navClass}}" *ngIf="_navPrimary">
   <ul>
     <li *ngFor="let navItem of navArr; index as i;" [routerLinkActive]="'current'" [class.contains-sub-menu]="navItem.childNav">
-      <a [routerLink]="navItem.navRoute">{{ navItem.navLabel }}</a>
+      <a [routerLink]="navItem.navRoute" *ngIf="!navItem.noClick">{{ navItem.navLabel }}</a>
+      <a *ngIf="navItem.noClick" href="#">{{ navItem.navLabel }}</a> <!-- (click)="navClick($event)" -->
       <ul class="sub-menu" *ngIf="navItem.childNav">
         <li *ngFor="let childNavItem of navArr[i].childNav" [routerLinkActive]="'current'">
           <a [routerLink]="childNavItem.navRoute">{{ childNavItem.navLabel }}</a>
@@ -15,6 +16,12 @@
   <ul>
     <li class="v-align-middle">
       <a href="login.html" class="button small rounded no-page-fade no-margin-bottom">Log In</a>
+    </li>
+    <li class="aux-navigation hide">
+      <!-- Aux Navigation -->
+      <a href="#" class="navigation-show overlay-nav-show nav-icon">
+        <span class="icon-menu"></span>
+      </a>
     </li>
   </ul>
 </nav>

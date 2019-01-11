@@ -10,7 +10,7 @@
       "prefix": "app",
       "schematics": {
         "@schematics/angular:component": {
-          "styleext": "sass"
+          "styleext": "scss"
         }
       },
       "architect": {
@@ -25,10 +25,15 @@
             "assets": [
               "src/favicon.ico",
               "src/assets",
-              "src/_redirects"
+              "src/_redirects",
+              {
+                "glob": "_redirects",
+                "input": "src",
+                "output": "/"
+              }
             ],
             "styles": [
-              "src/styles.sass"
+              "src/styles.scss"
             ],
             "scripts": []
           },
@@ -84,7 +89,7 @@
             "tsConfig": "src/tsconfig.spec.json",
             "karmaConfig": "src/karma.conf.js",
             "styles": [
-              "src/styles.sass"
+              "src/styles.scss"
             ],
             "scripts": [],
             "assets": [
@@ -136,5 +141,10 @@
       }
     }
   },
-  "defaultProject": "studytree-public"
+  "defaultProject": "studytree-public",
+  "schematics": {
+    "@schematics/angular:component": {
+      "styleext": "scss"
+    }
+  }
 }
