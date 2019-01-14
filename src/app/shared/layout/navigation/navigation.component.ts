@@ -16,7 +16,7 @@ export class NavigationComponent implements OnInit {
   @Input() public _navClass: string;
   @Input() public _navPrimary: boolean;
   public navArr = [];
-  constructor() {
+  constructor( ) {
     this.navArr = [
       {
         navRoute: '',
@@ -58,11 +58,6 @@ export class NavigationComponent implements OnInit {
   }
 
   ngOnInit() {
-  }
-
-  navClick(event) {
-    event.stopPropogation();
-    return false;
   }
 
 }

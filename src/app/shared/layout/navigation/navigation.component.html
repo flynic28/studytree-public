@@ -2,7 +2,7 @@
   <ul>
     <li *ngFor="let navItem of navArr; index as i;" [routerLinkActive]="'current'" [class.contains-sub-menu]="navItem.childNav">
       <a [routerLink]="navItem.navRoute" *ngIf="!navItem.noClick">{{ navItem.navLabel }}</a>
-      <a *ngIf="navItem.noClick" href="#">{{ navItem.navLabel }}</a> <!-- (click)="navClick($event)" -->
+      <a *ngIf="navItem.noClick" href="#">{{ navItem.navLabel }}</a>
       <ul class="sub-menu" *ngIf="navItem.childNav">
         <li *ngFor="let childNavItem of navArr[i].childNav" [routerLinkActive]="'current'">
           <a [routerLink]="childNavItem.navRoute">{{ childNavItem.navLabel }}</a>

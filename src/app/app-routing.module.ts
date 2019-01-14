@@ -21,6 +21,10 @@ const routes: Routes = [{
     path: 'corporate',
     component: MeetLeonComponent
   }
+  // , {
+  //   path: '**',
+  //   redirectTo: 'HomeComponent'
+  // }
 ];
 
 @NgModule({

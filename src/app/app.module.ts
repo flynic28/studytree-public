@@ -7,11 +7,11 @@ import { HeaderComponent } from './shared/layout/header/header.component';
 import { FooterComponent } from './shared/layout/footer/footer.component';
 import { NavigationComponent } from './shared/layout/navigation/navigation.component';
 import { OverlayNavigationComponent } from './shared/layout/overlay-navigation/overlay-navigation.component';
+import { HeroComponent } from './shared/hero/hero.component';
 
 import { HomeComponent } from './home/home.component';
 import { OurScienceComponent } from './our-science/our-science.component';
 import { MeetLeonComponent } from './meet-leon/meet-leon.component';
-import { HeroComponent } from './shared/hero/hero.component';
 
 @NgModule({
   declarations: [
