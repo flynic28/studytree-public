@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { HeroConfig } from '../shared/hero/hero.component';
 import { Title } from '@angular/platform-browser';
+import { CallOutConfig } from '../shared/callout-section/callout-section.component';
 
 @Component({
   selector: 'app-home',
@@ -10,7 +11,7 @@ import { Title } from '@angular/platform-browser';
 export class HomeComponent implements OnInit {
 
   public _heroConfig: HeroConfig;
-
+  public _callOutConfig: CallOutConfig;
   constructor(
     private titleService: Title
   ) {
@@ -41,6 +42,21 @@ export class HomeComponent implements OnInit {
             }
           }
         ]
+      }
+    };
+    this._callOutConfig = {
+      template: '',
+      container: {
+        cssClass: 'pt-50 pb-50 bkg-grey',
+        alignContent: 'center'
+      },
+      button: {
+        label: {
+          value: 'Request Demo',
+          strong: true
+        },
+        route: '',
+        cssClass: 'button rounded border-white color-white color-hover-white mb-0'
       }
     };
   }

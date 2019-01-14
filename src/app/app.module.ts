@@ -12,6 +12,7 @@ import { HeroComponent } from './shared/hero/hero.component';
 import { HomeComponent } from './home/home.component';
 import { OurScienceComponent } from './our-science/our-science.component';
 import { MeetLeonComponent } from './meet-leon/meet-leon.component';
+import { CalloutSectionComponent } from './shared/callout-section/callout-section.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { MeetLeonComponent } from './meet-leon/meet-leon.component';
     NavigationComponent,
     OverlayNavigationComponent,
     MeetLeonComponent,
-    HeroComponent
+    HeroComponent,
+    CalloutSectionComponent
   ],
   imports: [
     BrowserModule,
