@@ -1,0 +1,55 @@
+<article class="post">
+  <div class="post-content with-background">
+    <div class="post-media" *ngIf="_resource.postContent.video">
+      <div #thumbnail class="thumbnail">
+        <img [src]="_resource.postContent.video.url" alt="">
+        <div class="caption-over-outer">
+          <div class="caption-over-inner v-align-middle center">
+            <a class="icon-play icon-circled medium border-white color-white bkg-hover-theme color-hover-white"
+              href="https://player.vimeo.com/video/118640180?autoplay=0&amp;autoplay=1"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="post-media" *ngIf="_resource.postContent.image">
+      <div #thumbnail class="thumbnail">
+        <a class="overlay-link" [href]="_resource.id">
+          <img [src]="_resource.postContent.image.url" alt="">
+          <span class="overlay-info">
+            <span>
+              <span>
+                {{ hoverLabel }}
+              </span>
+            </span>
+          </span>
+        </a>
+      </div>
+    </div>
+    <h2 class="post-title" [clamp]='2'>
+      <a [href]="_resource.id">{{ _resource.postTitle }}</a>
+      </h2>
+    <div class="post-info">
+      <span class="post-date">{{ _resource.postDate }}</span>, in <span class="post-category" *ngFor="let category of _resource.postCategory; let last = last;"><a [href]="category.id">{{ category.label }}</a><ng-container *ngIf="!last">,&nbsp;</ng-container></span>
+    </div>
+    <a [href]="_resource.id" class="read-more">{{ readMoreLabel }}</a>
+    <div class="post-author">
+      <div class="row">
+        <div class="column width-12">
+          <div class="author-bio">
+            <div class="author-avatar clear-float" *ngIf="_resource.postAuthor.avatar">
+              <img [src]="_resource.postAuthor.avatar.url" alt="Avatar">
+            </div>
+            <div class="author-content">
+              <div class="row">
+                <div class="column width-12">
+                  <div class="name">by <a [href]="_resource.postAuthor.id">{{ _resource.postAuthor.firstName }} {{ _resource.postAuthor.lastName }}</a></div>
+                  <p class="author-title" *ngIf="_resource.postAuthor.displayTitle">{{ _resource.postAuthor.displayTitle }}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</article>

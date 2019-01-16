@@ -1,0 +1,31 @@
+<!-- Content -->
+<div class="content clearfix">
+
+  <!-- Fullscreen Slider Section -->
+  <app-hero [heroConfig]="_heroConfig"></app-hero>
+  <!-- Fullscreen Slider Section End -->
+  <!-- Blog Grid Section -->
+  <div class="section-block">
+    <div class="row">
+      <div class="column width-12">
+
+          <div class="blog-masonry grid-container masonry" data-layout="fitRows">
+            <div class="row">
+              <div class="column width-12">
+                <div class="row content-grid-3">
+                  <div class="grid-item" [class.grid-sizer]="first" *ngFor="let resource of _resources; let first = first">
+                    <app-resource-item [_resource]="resource"></app-resource-item>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+      </div>
+    </div>
+  </div>
+  <!-- Call Out Section -->
+  <app-callout-section [callOutConfig]="_callOutConfig"></app-callout-section>
+  <!-- Call Out Section End -->
+</div>
+<!-- Content End -->

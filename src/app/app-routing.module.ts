@@ -4,6 +4,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { OurScienceComponent } from './our-science/our-science.component';
 import { MeetLeonComponent } from './meet-leon/meet-leon.component';
+import { ResourcesComponent } from './resources/resources.component';
 
 const routes: Routes = [{
     path: '',
@@ -20,6 +21,9 @@ const routes: Routes = [{
   }, {
     path: 'corporate',
     component: MeetLeonComponent
+  }, {
+    path: 'resources',
+    component: ResourcesComponent
   }
   // , {
   //   path: '**',
