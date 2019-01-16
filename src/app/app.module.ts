@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { NgModule, } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http';
 import { NgxTextOverflowClampModule } from 'ngx-text-overflow-clamp';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -35,6 +36,7 @@ import { ResourcesComponent } from './resources/resources.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    HttpClientModule,
     NgxTextOverflowClampModule
   ],
   providers: [],

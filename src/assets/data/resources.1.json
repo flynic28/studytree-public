@@ -1,0 +1,54 @@
+[
+    {
+      "id": 1,
+      "postContent": {
+        "image": {
+          "url": "assets/images/generic/feature-2.jpg",
+          "caption": ""
+        },
+        "content": ""
+      },
+      "postTitle": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+      "postDate": 1547615260,
+      "postCategory": [
+        {
+          "id": 1,
+          "label": "Blog Post"
+        },
+        {
+          "id": 4,
+          "label": "Industry Insight"
+        }
+      ],
+      "postAuthor": {
+        "id": 34,
+        "firstName": "Jim",
+        "lastName": "Smith",
+        "displayTitle": "Provost of StudyTree"
+      }
+    },
+    {
+      "id": 2,
+      "postContent": {
+        "image": {
+          "url": "assets/images/generic/blockchain.jpg",
+          "caption": ""
+        },
+        "content": ""
+      },
+      "postTitle": "Voluptate velit esse.",
+      "postDate": 1555391260,
+      "postCategory": [
+        {
+          "id": 4,
+          "label": "Industry Insight"
+        }
+      ],
+      "postAuthor": {
+        "id": 3,
+        "firstName": "John",
+        "lastName": "Doe",
+        "displayTitle": "CTO of StudyTree"
+      }
+    }
+  ]
