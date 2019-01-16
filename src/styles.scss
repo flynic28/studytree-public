@@ -1,7 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
+$studytree-header-height: 8rem;
 .hide-pseudo {
     &::before,
     &::after {
         display: none;
     }
+}
+.section-block:first-child {
+    margin-top: $studytree-header-height;
 }
