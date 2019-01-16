@@ -1,4 +1,4 @@
-<div class="section-block {{ callOutConfig.template }} {{ callOutConfig.container?.cssClass }} {{ callOutConfig.container?.alignContent }}" [ngStyle]="{'background-image':'url(' + callOutConfig.container?.backgroundURL + ')', 'background-color': callOutConfig.container?.background-color }">
+<div class="section-block {{ callOutConfig.template }} {{ callOutConfig.container?.cssClass }} {{ callOutConfig.container?.alignContent }}" [ngStyle]="{'background-image':'url(' + callOutConfig.container?.backgroundURL + ')', 'background-color': callOutConfig.container?.backgroundColor }">
     <a (click)="callOutBtnClick(callOutConfig.button.route)" class="{{ callOutConfig.button.cssClass }}">
       <strong *ngIf="callOutConfig.button.label.strong" class="{{ callOutConfig.button.label.cssClass }}">{{ callOutConfig.button.label.value }}</strong>
       <span *ngIf="!callOutConfig.button.label.strong" class="{{ callOutConfig.button.label.cssClass }}">{{ callOutConfig.button.label.value }}</span>
