@@ -24,6 +24,16 @@
       </div>
     </div>
   </div>
+  <!-- Blog Grid Section End -->
+  <div class="section-block pt-0">
+    <div class="row">
+      <div class="column width-12 center">
+        <a (click)="loadMore()" class="button rounded border-grey bkg-black color-white mb-0" [class.disabled]="loadMoreDisabled">
+          {{ loadMoreLabel }}
+        </a>    
+      </div>
+    </div>
+  </div>
   <!-- Call Out Section -->
   <app-callout-section [callOutConfig]="_callOutConfig"></app-callout-section>
   <!-- Call Out Section End -->

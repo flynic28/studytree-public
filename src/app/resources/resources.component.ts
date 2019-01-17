@@ -15,11 +15,18 @@ export class ResourcesComponent implements OnInit {
   public _heroConfig: HeroConfig;
   public _callOutConfig: CallOutConfig;
   public _resources: ResourceItem[];
+  public page: number;
+  public resourcesPerPage: number;
+  public loadMoreLabel: string;
+  public loadMoreDisabled: boolean;
+
   constructor(
     public rest: RestService,
     private titleService: Title
   ) {
     this.titleService.setTitle('StudyTree | Resources');
+    this.loadMoreLabel = 'Load More';
+    this.loadMoreDisabled = false;
     this._heroConfig = {
       template: 'hero-4',
       container: {
@@ -58,13 +65,32 @@ export class ResourcesComponent implements OnInit {
         cssClass: 'button rounded border-white color-white color-hover-white mb-0'
       }
     };
+    this.page = 1;
+    this.resourcesPerPage = 6;
   }
 
   ngOnInit() {
-    this.rest.getResources(1).subscribe(data => {
-      console.log(data);
-      this._resources = data;
+    this.getResources();
+  }
+
+  getResources() {
+    this.rest.getResources(this.page).subscribe(data => {
+      if (this.page > 1) {
+        this._resources = this._resources.concat(data);
+      } else {
+        this._resources = data;
+      }
+      this.loadMoreDisabled = this._resources.length % this.resourcesPerPage !== 0 ? true : false;
+    },
+    err => {
+      this.loadMoreDisabled = true;
     });
   }
 
+  loadMore() {
+    if (!this.loadMoreDisabled) {
+      this.page = this.page + 1;
+      this.getResources();
+    }
+  }
 }
