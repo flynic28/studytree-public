@@ -17,6 +17,11 @@ import { HomeComponent } from './home/home.component';
 import { OurScienceComponent } from './our-science/our-science.component';
 import { MeetLeonComponent } from './meet-leon/meet-leon.component';
 import { ResourcesComponent } from './resources/resources.component';
+import { RowSectionComponent } from './shared/row-section/row-section.component';
+import { HigherEducationComponent } from './higher-education/higher-education.component';
+import { CorporateComponent } from './corporate/corporate.component';
+import { AboutUsComponent } from './about-us/about-us.component';
+import { RequestDemoComponent } from './request-demo/request-demo.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +36,12 @@ import { ResourcesComponent } from './resources/resources.component';
     HeroComponent,
     CalloutSectionComponent,
     ResourcesComponent,
-    ResourceItemComponent
+    ResourceItemComponent,
+    RowSectionComponent,
+    HigherEducationComponent,
+    CorporateComponent,
+    AboutUsComponent,
+    RequestDemoComponent
   ],
   imports: [
     BrowserModule,

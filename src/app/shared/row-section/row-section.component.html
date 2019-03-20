@@ -1,0 +1,26 @@
+<div class="section-block {{ _rowSection.section?.cssClass }}">
+  <div class="row flex content-grid {{ _rowSection.row?.cssClass }}">
+    <ng-container *ngFor="let column of _rowSection.columns">
+      <ng-container *ngIf="column.text">
+        <div class="column width-{{ column.gridWidth?.col }} offset-{{ column.gridOffset?.col }} push-{{ column.pushCol?.col }} pull-{{ column.pullCol?.col }} {{ column.cssClass }}">
+          <div class="feature-content">
+            <div class="feature-content-inner">
+              <div *ngIf="column.text.lead?.value" class="block-lead {{ column.text.lead.cssClass }}">{{ column.text.lead.value }}</div>
+              <h1 *ngIf="column.text.header?.value" class="{{ column.text.header.cssClass }}">{{ column.text.header.value }}</h1>
+              <p *ngIf="column.text.paragraph?.value" class="{{ column.text.paragraph.cssClass }}">{{ column.text.paragraph.value }}</p>
+            </div>
+          </div>
+        </div>
+      </ng-container>
+      <ng-container *ngIf="column.image">
+        <div class="column width-{{ column.gridWidth?.col }} offset-{{ column.gridOffset?.col }} push-{{ column.pushCol?.col }} pull-{{ column.pullCol?.col }} {{ column.cssClass }}">
+          <div class="mb-mobile-50">
+            <div class="center-on-mobile">
+              <img [src]="column.image.url" class="{{ column.image.cssClass }} " alt="" />
+            </div>
+          </div>
+        </div>        
+      </ng-container>
+    </ng-container>
+  </div>
+</div>

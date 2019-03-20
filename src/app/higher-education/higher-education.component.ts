@@ -1,55 +1,24 @@
 import { Component, OnInit } from '@angular/core';
-import { HeroConfig } from '../shared/hero/hero.component';
-import { Title } from '@angular/platform-browser';
-import { CallOutConfig } from '../shared/callout-section/callout-section.component';
 import { GridConfig } from '../shared/row-section/grid.model';
+import { CallOutConfig } from '../shared/callout-section/callout-section.component';
+import { Title } from '@angular/platform-browser';
 
 @Component({
-  selector: 'app-meet-leon',
-  templateUrl: './meet-leon.component.html',
-  styleUrls: ['./meet-leon.component.scss']
+  selector: 'app-higher-education',
+  templateUrl: './higher-education.component.html',
+  styleUrls: ['./higher-education.component.scss']
 })
-export class MeetLeonComponent implements OnInit {
+export class HigherEducationComponent implements OnInit {
 
-  public _heroConfig: HeroConfig;
   public _callOutConfig: CallOutConfig;
-  public _meetLeon_1: GridConfig;
-  public _meetLeon_2: GridConfig;
-  public _meetLeon_3: GridConfig;
+  public _higherEd_1: GridConfig;
+  public _higherEd_2: GridConfig;
+  public _higherEd_3: GridConfig;
 
   constructor(
     private titleService: Title
   ) {
-    this.titleService.setTitle('StudyTree | Meet LEON');
-    this._heroConfig = {
-      template: 'hero-5',
-      media: {
-        side: 'left',
-        url: '../../assets/images/MeetLeon_1.png',
-        bgSize: 'contain',
-        gridWidth: 6
-      },
-      content: {
-        row: {
-          fullWidth: false
-        },
-        columns: [
-          {
-            gridWidth: 6,
-            gridOffset: 6,
-            content: {
-              header: {
-                value: 'Your New AI Coach'
-              },
-              paragragh: {
-                value: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.'
-              },
-              alignment: 'left'
-            }
-          }
-        ]
-      }
-    };
+    this.titleService.setTitle('StudyTree | Higher Education Learning');
     this._callOutConfig = {
       template: '',
       container: {
@@ -65,7 +34,7 @@ export class MeetLeonComponent implements OnInit {
         cssClass: 'button rounded border-white color-white color-hover-white mb-0'
       }
     };
-    this._meetLeon_1 = {
+    this._higherEd_1 = {
       section: {
         cssClass: 'pb-20 pt-20 mt-80'
       },
@@ -75,7 +44,7 @@ export class MeetLeonComponent implements OnInit {
             col: 6
           },
           image: {
-            url: 'assets/images/MeetLeon_1.png'
+            url: 'assets/images/HigherEducation_1.png'
           }
         }, {
           gridWidth: {
@@ -83,7 +52,7 @@ export class MeetLeonComponent implements OnInit {
           },
           text: {
             header: {
-              value: 'Your New AI Coach',
+              value: 'Proactive Student Success',
               cssClass: 'mb-30'
             },
             paragraph: {
@@ -93,7 +62,7 @@ export class MeetLeonComponent implements OnInit {
         }
       ]
     };
-    this._meetLeon_2 = {
+    this._higherEd_2 = {
       section: {
         cssClass: 'pb-20 pt-20'
       },
@@ -106,7 +75,7 @@ export class MeetLeonComponent implements OnInit {
             col: 6
           },
           image: {
-            url: 'assets/images/MeetLeon_2.png'
+            url: 'assets/images/HigherEducation_2.png'
           }
         }, {
           gridWidth: {
@@ -117,7 +86,7 @@ export class MeetLeonComponent implements OnInit {
           },
           text: {
             header: {
-              value: 'Trained by Thousands',
+              value: 'Academic Coach for Every Student',
               cssClass: 'mb-30'
             },
             paragraph: {
@@ -127,7 +96,7 @@ export class MeetLeonComponent implements OnInit {
         }
       ]
     };
-    this._meetLeon_3 = {
+    this._higherEd_3 = {
       section: {
         cssClass: 'pb-20 pt-20 '
       },
@@ -137,7 +106,7 @@ export class MeetLeonComponent implements OnInit {
             col: 6
           },
           image: {
-            url: 'assets/images/MeetLeon_3.png'
+            url: 'assets/images/HigherEducation_3.png'
           }
         }, {
           gridWidth: {
@@ -145,7 +114,7 @@ export class MeetLeonComponent implements OnInit {
           },
           text: {
             header: {
-              value: 'Customized by You',
+              value: 'Manage Academic Support Services',
               cssClass: 'mb-30'
             },
             paragraph: {

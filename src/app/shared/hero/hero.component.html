@@ -1,5 +1,5 @@
 <div class="section-block {{ heroConfig.template }} {{ heroConfig.container?.cssClass }} {{ heroConfig.media?.side }}" [ngStyle]="{'background-image':'url(' + heroConfig.container?.backgroundURL + ')'}">
-  <div class="media-column width-{{ heroConfig.media?.gridWidth }} push-{{ heroConfig.media?.pushCol }} pull-{{ heroConfig.media?.pullCol }}" *ngIf="heroConfig.media" [ngStyle]="{'background-image':'url(' + heroConfig.media?.url + ')'}"></div>
+  <div class="media-column width-{{ heroConfig.media?.gridWidth }} push-{{ heroConfig.media?.pushCol }} pull-{{ heroConfig.media?.pullCol }}" *ngIf="heroConfig.media" [ngStyle]="setBgStyle()"></div>
   <div class="row hide-pseudo {{ heroConfig.content.row.cssClass }}" [class.fullWidth]="heroConfig.content.row.fullWidth">
     <div class="column width-{{ column.gridWidth }} offset-{{ column.gridOffset }} push-{{ column.pushCol }} pull-{{ column.pullCol }} {{ column.cssClass }}" *ngFor=" let column of heroConfig.content.columns">
       <div class="hero-content">

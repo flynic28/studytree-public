@@ -1,5 +1,4 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { Url } from 'url';
 
 export interface HeroConfig {
   template: 'hero-1' | 'hero-2' | 'hero-3' | 'hero-4' | 'hero-5' | 'hero-6' | 'hero-7' | 'hero-8' | 'custom' | '';
@@ -18,6 +17,7 @@ export interface HeroContainer {
 
 export interface HeroMediaCol {
   side: 'left' | 'right';
+  bgSize?: 'contain' | 'cover';
   gridWidth: 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12;
   gridOffset?: 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12;
   pushCol?: 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12;
@@ -63,6 +63,14 @@ export class HeroComponent implements OnInit {
   }
 
   ngOnInit() {
+  }
+
+  setBgStyle() {
+    const styles = {
+      'background-image': this.heroConfig.media.url ? 'url(' + this.heroConfig.media.url + ')' : null,
+      'background-size': this.heroConfig.media.bgSize || 'cover'
+    };
+    return styles;
   }
 
 }
