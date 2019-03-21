@@ -89,12 +89,16 @@ export class OurScienceComponent implements OnInit {
             col: 6
           },
           text: {
+            lead: {
+              value: 'Our Science',
+              cssClass: 'mb-20'
+            },
             header: {
-              value: 'We love research',
-              cssClass: 'mb-30'
+              value: 'We Love Research',
+              cssClass: 'mb-20'
             },
             paragraph: {
-              value: ''
+              value: 'The lastest advancements in behavioral science and artificial intelligence fuels our approach to human improvement'
             }
           }
         }

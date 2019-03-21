@@ -1,3 +1,8 @@
+@import '../../variables';
+
 .section-block.feature-2.pb-0.pt-0 {
     padding: 0;
+}
+.text-highlight {
+    color: $studytree-block-lead-bg;
 }

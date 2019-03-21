@@ -1,3 +1,18 @@
+@import '../../../variables';
+
 h1 {
     white-space: pre-line;
+}
+.block-lead {
+    text-transform: uppercase;
+    font-weight: normal;
+    background: $studytree-block-lead-bg;
+    display: inline-block;
+    padding: 0.5em 1em;
+    color: $studytree-block-lead-contrast;
+}
+
+.block-line {
+    height: .5em;
+    background: $studytree-block-lead-bg;
 }
