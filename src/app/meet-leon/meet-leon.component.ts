@@ -82,12 +82,16 @@ export class MeetLeonComponent implements OnInit {
             col: 6
           },
           text: {
+            lead: {
+              value: 'Meet Leon',
+              cssClass: 'mb-20'
+            },
             header: {
               value: 'Your New AI Coach',
-              cssClass: 'mb-30'
+              cssClass: 'mb-20'
             },
             paragraph: {
-              value: ''
+              value: 'Leon is an AI powered coach that works with each user on a 1 on 1 basis. He\'ll identify performance signals, set goals, and deploy intervention strategies before escalating to human involvment'
             }
           }
         }
@@ -118,10 +122,10 @@ export class MeetLeonComponent implements OnInit {
           text: {
             header: {
               value: 'Trained by Thousands',
-              cssClass: 'mb-30'
+              cssClass: 'mb-20'
             },
             paragraph: {
-              value: ''
+              value: 'Leon\'s intelligence continues to grow from the thousands of students am employees that talk with him on a daily basis. This allows Leon to identify performance issues earlier and propose the best resolutions.'
             }
           }
         }
@@ -146,10 +150,10 @@ export class MeetLeonComponent implements OnInit {
           text: {
             header: {
               value: 'Customized by You',
-              cssClass: 'mb-30'
+              cssClass: 'mb-20'
             },
             paragraph: {
-              value: ''
+              value: 'Leon will become a member of your organization; your very own on-site behavioral coach. He\'ll integration into your existing systems such as SalesForce, Blackboard, Canvas, or whatever performance data is being collected. You\'ll tell Leon which metrics matter most, and he\'ll take it from there.'
             }
           }
         }

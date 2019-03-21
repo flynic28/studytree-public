@@ -51,12 +51,16 @@ export class CorporateComponent implements OnInit {
             col: 6
           },
           text: {
+            lead: {
+              value: 'Corporate',
+              cssClass: 'mb-20'
+            },
             header: {
               value: 'Corporate Learning',
-              cssClass: 'mb-30'
+              cssClass: 'mb-20'
             },
             paragraph: {
-              value: ''
+              value: 'We believe organizations thrive when employees demonstrate high executive functioning. Research shows that coaching is the best way to improve these skills'
             }
           }
         }
@@ -87,10 +91,10 @@ export class CorporateComponent implements OnInit {
           text: {
             header: {
               value: 'Everybody Hates\nself-reporting surveys',
-              cssClass: 'mb-30'
+              cssClass: 'mb-20'
             },
             paragraph: {
-              value: ''
+              value: 'the old way of measuring employeee effectiveness requires boring surveys that collect cyber dust on some report. Rarely any actionable steps are taken to address issues.'
             }
           }
         }
@@ -115,10 +119,10 @@ export class CorporateComponent implements OnInit {
           text: {
             header: {
               value: 'Customized by You',
-              cssClass: 'mb-30'
+              cssClass: 'mb-20'
             },
             paragraph: {
-              value: ''
+              value: 'Something about how we can use data from multiple systems to describe how an individual is performing.'
             }
           }
         }

@@ -51,12 +51,16 @@ export class HigherEducationComponent implements OnInit {
             col: 6
           },
           text: {
+            lead: {
+              value: 'Higher Education',
+              cssClass: 'mb-20'
+            },
             header: {
               value: 'Proactive Student Success',
-              cssClass: 'mb-30'
+              cssClass: 'mb-20'
             },
             paragraph: {
-              value: ''
+              value: 'We\'ll believe the root of student failure is behavioral. Leon is built to identify poor academic behavior and intervene before a studentfails their first exam. Think of us as a proactive solution to student success.'
             }
           }
         }
@@ -87,10 +91,10 @@ export class HigherEducationComponent implements OnInit {
           text: {
             header: {
               value: 'Academic Coach for Every Student',
-              cssClass: 'mb-30'
+              cssClass: 'mb-20'
             },
             paragraph: {
-              value: ''
+              value: 'When student need a helping hand, or start to slip, we got them covered. Leon analyzes students\' grades and behavioral patterns to construct customized recommendations to improve their academic performance.'
             }
           }
         }
@@ -114,11 +118,11 @@ export class HigherEducationComponent implements OnInit {
           },
           text: {
             header: {
-              value: 'Manage Academic Support Services',
-              cssClass: 'mb-30'
+              value: 'Manage Academic\nSupport Services',
+              cssClass: 'mb-20'
             },
             paragraph: {
-              value: ''
+              value: 'StudyTree serves administrators by providing managerial access to the application, which enables insight to useful statistics and an overview of each student\'s individual progress'
             }
           }
         }

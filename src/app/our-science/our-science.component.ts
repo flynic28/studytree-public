@@ -98,7 +98,7 @@ export class OurScienceComponent implements OnInit {
               cssClass: 'mb-20'
             },
             paragraph: {
-              value: 'The lastest advancements in behavioral science and artificial intelligence fuels our approach to human improvement'
+              value: 'The lastest advancements in behavioral science and artificial intelligence fuels our approach to human improvement.'
             }
           }
         }
@@ -127,12 +127,16 @@ export class OurScienceComponent implements OnInit {
             col: 6
           },
           text: {
+            lead: {
+              value: 'Our Secret Sauce',
+              cssClass: 'mb-20'
+            },
             header: {
               value: 'AI is the Future',
-              cssClass: 'mb-30'
+              cssClass: 'mb-20'
             },
             paragraph: {
-              value: ''
+              value: 'Artificial intelligence gives you the power of a thousand coaches for the cost of one. This means extremely personalized engagement that builds a truely empathic relationship.'
             }
           }
         }
@@ -157,10 +161,10 @@ export class OurScienceComponent implements OnInit {
           text: {
             header: {
               value: 'Data Driven Success',
-              cssClass: 'mb-30'
+              cssClass: 'mb-20'
             },
             paragraph: {
-              value: ''
+              value: 'We\'ll drive success around the metrics that your organization values most.'
             }
           }
         }
