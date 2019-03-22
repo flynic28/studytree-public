@@ -5,7 +5,7 @@
         <div class="column width-{{ column.gridWidth?.col }} offset-{{ column.gridOffset?.col }} push-{{ column.pushCol?.col }} pull-{{ column.pullCol?.col }} {{ column.cssClass }}">
           <div class="feature-content">
             <div class="feature-content-inner">
-              <h3 *ngIf="column.text.lead?.value" class="block-lead {{ column.text.lead.cssClass }}">{{ column.text.lead.value }}</h3>
+              <h4 *ngIf="column.text.lead?.value" class="block-lead {{ column.text.lead.cssClass }}">{{ column.text.lead.value }}</h4>
               <h1 *ngIf="column.text.header?.value" class="{{ column.text.header.cssClass }}">{{ column.text.header.value }}</h1>
               <p *ngIf="column.text.paragraph?.value" class="{{ column.text.paragraph.cssClass }}">{{ column.text.paragraph.value }}</p>
               <div class="block-line"></div>
