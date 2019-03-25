@@ -4,6 +4,10 @@ export interface NavArray {
   navRoute: string;
   navLabel: string;
   noClick?: boolean;
+  external: {
+    url: string;
+    target: string;
+  };
   childNav?: NavArray[];
 }
 
@@ -52,7 +56,11 @@ export class NavigationComponent implements OnInit {
         navLabel: 'About Us'
       }, {
         navRoute: 'request-demo',
-        navLabel: 'Request Demo'
+        navLabel: 'Request Demo',
+        external: {
+          url: 'https://studytree.typeform.com/to/xkofdE',
+          target: '_blank'
+        }
       }
     ];
   }

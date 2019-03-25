@@ -11,7 +11,6 @@ import { GridConfig } from '../shared/row-section/grid.model';
 })
 export class OurScienceComponent implements OnInit {
 
-  public _heroConfig: HeroConfig;
   public _ourScience_1: GridConfig;
   public _ourScience_2: GridConfig;
   public _ourScience_3: GridConfig;
@@ -21,36 +20,6 @@ export class OurScienceComponent implements OnInit {
     private titleService: Title
   ) {
     this.titleService.setTitle('StudyTree | Our Science');
-    this._heroConfig = {
-      template: 'hero-5',
-      media: {
-        side: 'right',
-        url: '../../assets/images/OurScience_1.png',
-        bgSize: 'contain',
-        gridWidth: 6
-      },
-      content: {
-        row: {
-          fullWidth: false
-        },
-        columns: [
-          {
-            gridWidth: 6,
-            content: {
-              header: {
-                // cssClass: 'weight-semi-bold',
-                value: 'We love research'
-              },
-              paragragh: {
-                // cssClass: 'weight-semi-bold',
-                value: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.'
-              },
-              alignment: 'left'
-            }
-          }
-        ]
-      }
-    };
     this._callOutConfig = {
       template: '',
       container: {
@@ -68,10 +37,11 @@ export class OurScienceComponent implements OnInit {
     };
     this._ourScience_1 = {
       section: {
-        cssClass: 'pb-20 pt-20 mt-80'
+        cssClass: 'pb-0 pt-20 mt-80'
       },
       columns: [
         {
+          cssClass: 'pb-30 pt-30',
           gridWidth: {
             col: 6
           },
@@ -82,6 +52,7 @@ export class OurScienceComponent implements OnInit {
             url: 'assets/images/OurScience_1.png'
           }
         }, {
+          cssClass: 'pb-30 pt-30',
           gridWidth: {
             col: 6
           },
@@ -106,10 +77,11 @@ export class OurScienceComponent implements OnInit {
     };
     this._ourScience_2 = {
       section: {
-        cssClass: 'pb-20 pt-20'
+        cssClass: 'pt-0 pb-0'
       },
       columns: [
         {
+          cssClass: 'pb-30 pt-30',
           gridWidth: {
             col: 6
           },
@@ -120,6 +92,7 @@ export class OurScienceComponent implements OnInit {
             url: 'assets/images/OurScience_3.png'
           }
         }, {
+          cssClass: 'pb-30 pt-30',
           gridWidth: {
             col: 6
           },
@@ -144,10 +117,11 @@ export class OurScienceComponent implements OnInit {
     };
     this._ourScience_3 = {
       section: {
-        cssClass: 'pb-20 pt-20 '
+        cssClass: 'pb-20 pt-0'
       },
       columns: [
         {
+          cssClass: 'pb-30 pt-30',
           gridWidth: {
             col: 6
           },
@@ -155,6 +129,7 @@ export class OurScienceComponent implements OnInit {
             url: 'assets/images/OurScience_4.png'
           }
         }, {
+          cssClass: 'pb-30 pt-30',
           gridWidth: {
             col: 6
           },

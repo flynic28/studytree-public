@@ -45,3 +45,16 @@ p,
 body {
     color: $studytree-font-color
 }
+
+.navigation .sub-menu:not(.custom-content) li:hover > a,
+.navigation .mega-sub-menu:not(.custom-content) ul li:hover > a,
+.navigation .dropdown-list:not(.custom-content) li:hover a,
+.navigation .sub-menu:not(.custom-content) li.current > a,
+.navigation .mega-sub-menu ul li.current > a{
+	border-left-color: $studytree-block-lead-bg;
+}
+
+.header-background .v-align-middle > .button:not(.nav-icon):hover,
+.header-background .dropdown > .button:not(.nav-icon):hover{
+	background-color: $studytree-block-lead-bg;
+}

@@ -11,7 +11,6 @@ import { GridConfig } from '../shared/row-section/grid.model';
 })
 export class MeetLeonComponent implements OnInit {
 
-  public _heroConfig: HeroConfig;
   public _callOutConfig: CallOutConfig;
   public _meetLeon_1: GridConfig;
   public _meetLeon_2: GridConfig;
@@ -21,35 +20,6 @@ export class MeetLeonComponent implements OnInit {
     private titleService: Title
   ) {
     this.titleService.setTitle('StudyTree | Meet LEON');
-    this._heroConfig = {
-      template: 'hero-5',
-      media: {
-        side: 'left',
-        url: '../../assets/images/MeetLeon_1.png',
-        bgSize: 'contain',
-        gridWidth: 6
-      },
-      content: {
-        row: {
-          fullWidth: false
-        },
-        columns: [
-          {
-            gridWidth: 6,
-            gridOffset: 6,
-            content: {
-              header: {
-                value: 'Your New AI Coach'
-              },
-              paragragh: {
-                value: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.'
-              },
-              alignment: 'left'
-            }
-          }
-        ]
-      }
-    };
     this._callOutConfig = {
       template: '',
       container: {
@@ -67,10 +37,11 @@ export class MeetLeonComponent implements OnInit {
     };
     this._meetLeon_1 = {
       section: {
-        cssClass: 'pb-20 pt-20 mt-80'
+        cssClass: 'pb-0 pt-20 mt-80'
       },
       columns: [
         {
+          cssClass: 'pb-30 pt-30',
           gridWidth: {
             col: 6
           },
@@ -78,6 +49,7 @@ export class MeetLeonComponent implements OnInit {
             url: 'assets/images/MeetLeon_1.png'
           }
         }, {
+          cssClass: 'pb-30 pt-30',
           gridWidth: {
             col: 6
           },
@@ -99,10 +71,11 @@ export class MeetLeonComponent implements OnInit {
     };
     this._meetLeon_2 = {
       section: {
-        cssClass: 'pb-20 pt-20'
+        cssClass: 'pb-0 pt-0'
       },
       columns: [
         {
+          cssClass: 'pb-30 pt-30',
           gridWidth: {
             col: 6
           },
@@ -113,6 +86,7 @@ export class MeetLeonComponent implements OnInit {
             url: 'assets/images/MeetLeon_2.png'
           }
         }, {
+          cssClass: 'pb-30 pt-30',
           gridWidth: {
             col: 6
           },
@@ -133,10 +107,11 @@ export class MeetLeonComponent implements OnInit {
     };
     this._meetLeon_3 = {
       section: {
-        cssClass: 'pb-20 pt-20 '
+        cssClass: 'pb-20 pt-0'
       },
       columns: [
         {
+          cssClass: 'pb-30 pt-30',
           gridWidth: {
             col: 6
           },
@@ -144,6 +119,7 @@ export class MeetLeonComponent implements OnInit {
             url: 'assets/images/MeetLeon_3.png'
           }
         }, {
+          cssClass: 'pb-30 pt-30',
           gridWidth: {
             col: 6
           },

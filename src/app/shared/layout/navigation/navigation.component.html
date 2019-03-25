@@ -1,12 +1,17 @@
 <nav ngClass="{{_navClass}}" *ngIf="_navPrimary">
   <ul>
     <li *ngFor="let navItem of navArr; index as i;" [routerLinkActive]="'current'" [class.contains-sub-menu]="navItem.childNav">
-      <a [routerLink]="navItem.childNav ? navItem.childNav[0].navRoute : navItem.navRoute" >{{ navItem.navLabel }}</a>
-      <ul class="sub-menu" *ngIf="navItem.childNav">
-        <li *ngFor="let childNavItem of navArr[i].childNav" [routerLinkActive]="'current'">
-          <a [routerLink]="childNavItem.navRoute">{{ childNavItem.navLabel }}</a>
-        </li>
-      </ul>
+      <ng-container *ngIf="navItem.external?.url">
+        <a [href]="navItem.external.url" [target]="navItem.external.target" >{{ navItem.navLabel }}</a>
+      </ng-container>
+      <ng-container *ngIf="!navItem.external?.url">
+        <a [routerLink]="navItem.childNav ? navItem.childNav[0].navRoute : navItem.navRoute" >{{ navItem.navLabel }}</a>
+        <ul class="sub-menu" *ngIf="navItem.childNav">
+          <li *ngFor="let childNavItem of navArr[i].childNav" [routerLinkActive]="'current'">
+            <a [routerLink]="childNavItem.navRoute">{{ childNavItem.navLabel }}</a>
+          </li>
+        </ul>    
+      </ng-container>
     </li>
   </ul>
 </nav>

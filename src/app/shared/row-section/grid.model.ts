@@ -11,6 +11,7 @@ export interface GridColCOnfig {
 export interface GridColumn {
     image?: MediaConfig;
     text?: TextConfig;
+    cssClass?: string;
     gridWidth: GridColCOnfig;
     gridOffset?: GridColCOnfig;
     pushCol?: GridColCOnfig;

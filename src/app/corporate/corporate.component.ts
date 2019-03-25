@@ -36,10 +36,11 @@ export class CorporateComponent implements OnInit {
     };
     this._corporate_1 = {
       section: {
-        cssClass: 'pb-20 pt-20 mt-80'
+        cssClass: 'pb-0 pt-20 mt-80'
       },
       columns: [
         {
+          cssClass: 'pb-30 pt-30',
           gridWidth: {
             col: 6
           },
@@ -47,6 +48,7 @@ export class CorporateComponent implements OnInit {
             url: 'assets/images/CorporateLearning_1.png'
           }
         }, {
+          cssClass: 'pb-30 pt-30',
           gridWidth: {
             col: 6
           },
@@ -68,10 +70,11 @@ export class CorporateComponent implements OnInit {
     };
     this._corporate_2 = {
       section: {
-        cssClass: 'pb-20 pt-20'
+        cssClass: 'pt-0 pb-0'
       },
       columns: [
         {
+          cssClass: 'pb-30 pt-30',
           gridWidth: {
             col: 6
           },
@@ -82,6 +85,7 @@ export class CorporateComponent implements OnInit {
             url: 'assets/images/CorporateLearning_2.png'
           }
         }, {
+          cssClass: 'pb-30 pt-30',
           gridWidth: {
             col: 6
           },
@@ -102,10 +106,11 @@ export class CorporateComponent implements OnInit {
     };
     this._corporate_3 = {
       section: {
-        cssClass: 'pb-20 pt-20 '
+        cssClass: 'pt-0 pb-20'
       },
       columns: [
         {
+          cssClass: 'pb-30 pt-30',
           gridWidth: {
             col: 6
           },
@@ -113,6 +118,7 @@ export class CorporateComponent implements OnInit {
             url: 'assets/images/MeetLeon_3.png'
           }
         }, {
+          cssClass: 'pb-30 pt-30',
           gridWidth: {
             col: 6
           },
