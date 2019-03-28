@@ -1,5 +1,14 @@
 @import "../../../variables.scss";
 
-.section-block {
-    margin-top: $studytree-header-height;
+app-hero {
+    .section-block {
+        margin-top: $studytree-header-height;
+    }
+    h1,
+    h3 {
+        color: $studytree-block-lead-contrast;
+    }
+    span.accent {
+        color: $studytree-block-lead-bg;
+    }
 }

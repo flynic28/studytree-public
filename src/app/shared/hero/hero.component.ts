@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, ViewEncapsulation } from '@angular/core';
 
 export interface HeroConfig {
   template: 'hero-1' | 'hero-2' | 'hero-3' | 'hero-4' | 'hero-5' | 'hero-6' | 'hero-7' | 'hero-8' | 'custom' | '';
@@ -55,7 +55,8 @@ export interface LabelConfig {
 @Component({
   selector: 'app-hero',
   templateUrl: './hero.component.html',
-  styleUrls: ['./hero.component.scss']
+  styleUrls: ['./hero.component.scss'],
+  encapsulation: ViewEncapsulation.None
 })
 export class HeroComponent implements OnInit {
   @Input() heroConfig: HeroConfig;

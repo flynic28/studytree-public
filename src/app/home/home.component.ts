@@ -19,7 +19,7 @@ export class HomeComponent implements OnInit {
     this._heroConfig = {
       template: 'hero-4',
       container: {
-        backgroundURL: '../../assets/images/generic/blockchain.jpg',
+        backgroundURL: '../../assets/images/studytree_HeroIMG@0,75x.png',
       },
       content: {
         row: {
@@ -31,14 +31,14 @@ export class HomeComponent implements OnInit {
             gridOffset: 6,
             content: {
               header: {
-                cssClass: 'weight-semi-bold',
-                value: 'Improve Efficiency'
+                cssClass: 'weight-bold mb-0',
+                value: '<span class="accent">Improve</span> Efficiency'
               },
               secondary: {
                 cssClass: 'weight-semi-bold',
                 value: 'From Student to Professionals'
               },
-              alignment: 'left'
+              alignment: 'right'
             }
           }
         ]

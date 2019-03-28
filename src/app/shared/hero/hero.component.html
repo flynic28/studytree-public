@@ -4,7 +4,7 @@
     <div class="column width-{{ column.gridWidth }} offset-{{ column.gridOffset }} push-{{ column.pushCol }} pull-{{ column.pullCol }} {{ column.cssClass }}" *ngFor=" let column of heroConfig.content.columns">
       <div class="hero-content">
         <div class="hero-content-inner {{ column.content.alignment }} {{ column.content.cssClass }}">
-          <h1 [ngClass]="column.content.header.cssClass" *ngIf="column.content.header">{{ column.content.header.value }}</h1>
+          <h1 [ngClass]="column.content.header.cssClass" *ngIf="column.content.header" [innerHTML]="column.content.header.value"></h1>
           <h3 [ngClass]="column.content.secondary.cssClass" *ngIf="column.content.secondary">{{ column.content.secondary.value }}</h3>
           <p [ngClass]="column.content.paragragh.cssClass" *ngIf="column.content.paragragh">{{ column.content.paragragh.value }}</p>
         </div>
