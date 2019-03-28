@@ -48,12 +48,12 @@ export class NavigationComponent implements OnInit {
             navLabel: 'Corporate'
           }
         ]
-      }, {
-        navRoute: 'resources',
-        navLabel: 'Resources'
-      }, {
-        navRoute: 'about-us',
-        navLabel: 'About Us'
+      // }, {
+      //   navRoute: 'resources',
+      //   navLabel: 'Resources'
+      // }, {
+      //   navRoute: 'about-us',
+      //   navLabel: 'About Us'
       }, {
         navRoute: 'request-demo',
         navLabel: 'Request Demo',

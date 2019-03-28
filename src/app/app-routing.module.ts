@@ -25,20 +25,19 @@ const routes: Routes = [{
   }, {
     path: 'corporate',
     component: CorporateComponent
-  }, {
-    path: 'resources',
-    component: ResourcesComponent
-  }, {
-    path: 'about-us',
-    component: AboutUsComponent
+  // }, {
+  //   path: 'resources',
+  //   component: ResourcesComponent
+  // }, {
+  //   path: 'about-us',
+  //   component: AboutUsComponent
   }, {
     path: 'request-demo',
     component: RequestDemoComponent
+  }, {
+    path: '**',
+    redirectTo: 'HomeComponent'
   }
-  // , {
-  //   path: '**',
-  //   redirectTo: 'HomeComponent'
-  // }
 ];
 
 @NgModule({
