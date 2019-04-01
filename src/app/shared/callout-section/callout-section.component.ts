@@ -42,8 +42,4 @@ export class CalloutSectionComponent implements OnInit {
   ngOnInit() {
   }
 
-  callOutBtnClick(clickRoute: any) {
-    this.router.navigate(clickRoute);
-  }
-
 }
