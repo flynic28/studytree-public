@@ -22,6 +22,8 @@ import { HigherEducationComponent } from './higher-education/higher-education.co
 import { CorporateComponent } from './corporate/corporate.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { RequestDemoComponent } from './request-demo/request-demo.component';
+import { TermsOfServiceComponent } from './terms-of-service/terms-of-service.component';
+import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.component';
 
 @NgModule({
   declarations: [
@@ -41,7 +43,9 @@ import { RequestDemoComponent } from './request-demo/request-demo.component';
     HigherEducationComponent,
     CorporateComponent,
     AboutUsComponent,
-    RequestDemoComponent
+    RequestDemoComponent,
+    TermsOfServiceComponent,
+    PrivacyPolicyComponent
   ],
   imports: [
     BrowserModule,

@@ -9,6 +9,8 @@ import { HigherEducationComponent } from './higher-education/higher-education.co
 import { CorporateComponent } from './corporate/corporate.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { RequestDemoComponent } from './request-demo/request-demo.component';
+import { TermsOfServiceComponent } from './terms-of-service/terms-of-service.component';
+import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.component';
 
 const routes: Routes = [{
     path: '',
@@ -34,6 +36,12 @@ const routes: Routes = [{
   }, {
     path: 'request-demo',
     component: RequestDemoComponent
+  }, {
+    path: 'tos',
+    component: TermsOfServiceComponent
+  }, {
+    path: 'privacy',
+    component: PrivacyPolicyComponent
   }, {
     path: '**',
     redirectTo: 'HomeComponent'
