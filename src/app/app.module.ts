@@ -2,6 +2,9 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule, } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
 import { NgxTextOverflowClampModule } from 'ngx-text-overflow-clamp';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -51,9 +54,14 @@ import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.componen
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    NgxTextOverflowClampModule
+    NgxTextOverflowClampModule,
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+  constructor() {
+    library.add(faBars, faTimes);
+  }
+}
