@@ -1,0 +1,14 @@
+img.headshot {
+    object-fit: cover;
+}
+.headshot-meta {
+    display: flex;
+    align-items: center;
+    span {
+        margin-bottom: 0;
+    }
+    cite {
+        margin-top: 0;
+        padding-left: 1.5rem;
+    }
+}
