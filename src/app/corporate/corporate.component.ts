@@ -62,7 +62,7 @@ export class CorporateComponent implements OnInit {
               cssClass: 'mb-20'
             },
             paragraph: {
-              value: 'We believe organizations thrive when employees demonstrate high executive functioning. Research shows that coaching is the best way to improve these skills'
+              value: 'We believe organizations thrive when employees demonstrate high executive functioning and learning gaps are filled. Research shows that coaching is the best way to improve employee outcomes.'
             }
           }
         }
@@ -115,7 +115,7 @@ export class CorporateComponent implements OnInit {
             col: 6
           },
           image: {
-            url: 'assets/images/MeetLeon_3.png'
+            url: 'assets/images/CorporateLearning_3.png'
           }
         }, {
           cssClass: 'pb-30 pt-30',

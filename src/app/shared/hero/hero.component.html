@@ -1,12 +1,19 @@
-<div class="section-block {{ heroConfig.template }} {{ heroConfig.container?.cssClass }} {{ heroConfig.media?.side }}" [ngStyle]="{'background-image':'url(' + heroConfig.container?.backgroundURL + ')'}">
-  <div class="media-column width-{{ heroConfig.media?.gridWidth }} push-{{ heroConfig.media?.pushCol }} pull-{{ heroConfig.media?.pullCol }}" *ngIf="heroConfig.media" [ngStyle]="setBgStyle()"></div>
+<div class="section-block {{ heroConfig.template }} {{ heroConfig.container?.cssClass }} {{ heroConfig.media?.side }}" [ngStyle]="setBgStyle()">
+  <div class="media-column width-{{ heroConfig.media?.gridWidth }} push-{{ heroConfig.media?.pushCol }} pull-{{ heroConfig.media?.pullCol }}" *ngIf="heroConfig.media"></div>
   <div class="row hide-pseudo {{ heroConfig.content.row.cssClass }}" [class.fullWidth]="heroConfig.content.row.fullWidth">
     <div class="column width-{{ column.gridWidth }} offset-{{ column.gridOffset }} push-{{ column.pushCol }} pull-{{ column.pullCol }} {{ column.cssClass }}" *ngFor=" let column of heroConfig.content.columns">
       <div class="hero-content">
         <div class="hero-content-inner {{ column.content.alignment }} {{ column.content.cssClass }}">
-          <h1 [ngClass]="column.content.header.cssClass" *ngIf="column.content.header" [innerHTML]="column.content.header.value"></h1>
-          <h3 [ngClass]="column.content.secondary.cssClass" *ngIf="column.content.secondary">{{ column.content.secondary.value }}</h3>
-          <p [ngClass]="column.content.paragragh.cssClass" *ngIf="column.content.paragragh">{{ column.content.paragragh.value }}</p>
+          <h1 [ngClass]="column.content.header.cssClass" *ngIf="column.content.header">
+            <span *ngIf="column.content.header.staticValue && !column.content.header.typeJS" [innerHTML]="column.content.header.staticValue"></span>
+            <ngx-typed-js *ngIf="column.content.header.typeJS" [strings]="column.content.header.typeJS" [loop]="true" [shuffle]="true" [typeSpeed]="75" [showCursor]="false" [backSpeed]="75" [backDelay]="550">
+                <span *ngIf="column.content.header.staticValue" [innerHTML]="column.content.header.staticValue"></span>
+                <ng-container *ngIf="column.content.header.staticValue && column.content.header.typeJS">&nbsp;</ng-container>
+                <span class="typing"></span>
+            </ngx-typed-js>
+          </h1>
+          <h3 [ngClass]="column.content.secondary.cssClass" *ngIf="column.content.secondary">{{ column.content.secondary.staticValue }}</h3>
+          <p [ngClass]="column.content.paragragh.cssClass" *ngIf="column.content.paragragh">{{ column.content.paragragh.staticValue }}</p>
         </div>
       </div>
     </div>

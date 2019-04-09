@@ -10,19 +10,23 @@ export interface HeroConfig {
   };
 }
 
-export interface HeroContainer {
-  backgroundURL?: string;
+export interface HeroMedia {
+  bgSize?: 'contain' | 'cover';
+  bgPosY?: 'center' | 'top' | 'bottom' | string;
+  bgPosX?: 'left' | 'center' | 'right' | string;
+  url: string;
+}
+
+export interface HeroContainer extends HeroMedia {
   cssClass?: string;
 }
 
-export interface HeroMediaCol {
+export interface HeroMediaCol extends HeroMedia {
   side: 'left' | 'right';
-  bgSize?: 'contain' | 'cover';
   gridWidth: 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12;
   gridOffset?: 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12;
   pushCol?: 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12;
   pullCol?: 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12;
-  url: string;
 }
 
 export interface HeroRow {
@@ -48,7 +52,8 @@ export interface HeroColContent {
 }
 
 export interface LabelConfig {
-  value: string;
+  staticValue?: string;
+  typeJS?: string[];
   cssClass?: string;
 }
 
@@ -68,8 +73,10 @@ export class HeroComponent implements OnInit {
 
   setBgStyle() {
     const styles = {
-      'background-image': this.heroConfig.media.url ? 'url(' + this.heroConfig.media.url + ')' : null,
-      'background-size': this.heroConfig.media.bgSize || 'cover'
+      'background-image': this.heroConfig.container.url ? 'url(' + this.heroConfig.container.url + ')' : null,
+      'background-size': this.heroConfig.container.bgSize || 'cover',
+      'background-position-y': this.heroConfig.container.bgPosY || 'center',
+      'background-position-x': this.heroConfig.container.bgPosX || 'center',
     };
     return styles;
   }

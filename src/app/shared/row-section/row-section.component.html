@@ -5,9 +5,9 @@
         <div class="column {{ column.gridWidth?.col ? ' width-' + column.gridWidth?.col : '' }} {{ column.gridOffset?.col ? ' offset-' + column.gridOffset?.col : '' }} {{ column.pushCol?.col ? ' push-' + column.pushCol?.col : '' }} {{ column.pullCol?.col ? ' pull-' + column.pullCol?.col : '' }} {{ column.cssClass }}">
           <div class="feature-content">
             <div class="feature-content-inner">
-              <h4 *ngIf="column.text.lead?.value" class="block-lead {{ column.text.lead.cssClass }}">{{ column.text.lead.value }}</h4>
-              <h1 *ngIf="column.text.header?.value" class="{{ column.text.header.cssClass }}">{{ column.text.header.value }}</h1>
-              <p *ngIf="column.text.paragraph?.value" class="{{ column.text.paragraph.cssClass }}">{{ column.text.paragraph.value }}</p>
+              <h4 *ngIf="column.text.lead?.value" class="block-lead {{ column.text.lead.cssClass }}" [innerHTML]="column.text.lead.value"></h4>
+              <h1 *ngIf="column.text.header?.value" class="{{ column.text.header.cssClass }}" [innerHTML]="column.text.header.value"></h1>
+              <p *ngIf="column.text.paragraph?.value" class="{{ column.text.paragraph.cssClass }}" [innerHTML]="column.text.paragraph.value"></p>
               <div class="block-line"></div>
             </div>
           </div>
@@ -17,7 +17,7 @@
         <div class="column {{ column.gridWidth?.col ? ' width-' + column.gridWidth?.col : '' }} {{ column.gridOffset?.col ? ' offset-' + column.gridOffset?.col : '' }} {{ column.pushCol?.col ? ' push-' + column.pushCol?.col : '' }} {{ column.pullCol?.col ? ' pull-' + column.pullCol?.col : '' }} {{ column.cssClass }}">
           <div class="mb-mobile-50">
             <div class="center-on-mobile">
-              <img [src]="column.image.url" class="{{ column.image.cssClass }} " alt="" />
+              <img [src]="column.image.url" class="horizon {{ column.image.cssClass }} " alt="" data-animate-in="preset:fadeIn;duration:500ms;"/>
             </div>
           </div>
         </div>        

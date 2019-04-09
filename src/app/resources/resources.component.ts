@@ -30,7 +30,7 @@ export class ResourcesComponent implements OnInit {
     this._heroConfig = {
       template: 'hero-4',
       container: {
-        backgroundURL: '../../assets/images/generic/blockchain.jpg',
+        url: '../../assets/images/generic/blockchain.jpg',
       },
       content: {
         row: {
@@ -42,7 +42,7 @@ export class ResourcesComponent implements OnInit {
             content: {
               header: {
                 cssClass: 'weight-semi-bold',
-                value: 'Industry Resources from Experts'
+                staticValue: 'Industry Resources from Experts'
               },
               alignment: 'center'
             }

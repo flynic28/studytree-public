@@ -5,6 +5,7 @@ import { NgxTextOverflowClampModule } from 'ngx-text-overflow-clamp';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
+import { NgxTypedJsModule } from 'ngx-typed-js';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -55,7 +56,8 @@ import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.componen
     AppRoutingModule,
     HttpClientModule,
     NgxTextOverflowClampModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    NgxTypedJsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

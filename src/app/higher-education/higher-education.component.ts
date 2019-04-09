@@ -62,7 +62,7 @@ export class HigherEducationComponent implements OnInit {
               cssClass: 'mb-20'
             },
             paragraph: {
-              value: 'We\'ll believe the root of student failure is behavioral. Leon is built to identify poor academic behavior and intervene before a studentfails their first exam. Think of us as a proactive solution to student success.'
+              value: 'We believe that the root of student failure is behavioral. Leon is built to identify poor academic behavior and intervene before a student fails. Think of us as a proactive solution to support student success.'
             }
           }
         }
