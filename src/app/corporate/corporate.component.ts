@@ -94,11 +94,11 @@ export class CorporateComponent implements OnInit {
           },
           text: {
             header: {
-              value: 'Everybody Hates\nself-reporting surveys',
+              value: 'Survey\nHolistic Conversational Assessment',
               cssClass: 'mb-20'
             },
             paragraph: {
-              value: 'the old way of measuring employeee effectiveness requires boring surveys that collect cyber dust on some report. Rarely any actionable steps are taken to address issues.'
+              value: 'Natural language assessments builds rapport and delivers the most honest feedback.'
             }
           }
         }
@@ -124,11 +124,11 @@ export class CorporateComponent implements OnInit {
           },
           text: {
             header: {
-              value: 'Customized by You',
+              value: 'Customized for You',
               cssClass: 'mb-20'
             },
             paragraph: {
-              value: 'Something about how we can use data from multiple systems to describe how an individual is performing.'
+              value: 'We tie into your existing systems to deliver contexual engagement around the metrics your organization cares most about.'
             }
           }
         }
