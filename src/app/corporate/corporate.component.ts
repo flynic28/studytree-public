@@ -94,7 +94,7 @@ export class CorporateComponent implements OnInit {
           },
           text: {
             header: {
-              value: 'Survey\nHolistic Conversational Assessment',
+              value: 'Holistic Conversational Assessment',
               cssClass: 'mb-20'
             },
             paragraph: {
