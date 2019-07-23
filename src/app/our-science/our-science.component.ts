@@ -109,7 +109,7 @@ export class OurScienceComponent implements OnInit {
               cssClass: 'mb-20'
             },
             paragraph: {
-              value: 'Artificial intelligence gives you the power of a thousand coaches for the cost of one. This means extremely personalized engagement that builds a truely empathic relationship.'
+              value: 'Artificial intelligence gives you the power of a thousand coaches for the cost of one. This means extremely personalized engagement that builds a truly empathic relationship.'
             }
           }
         }

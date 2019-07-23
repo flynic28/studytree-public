@@ -98,7 +98,7 @@ export class CorporateComponent implements OnInit {
               cssClass: 'mb-20'
             },
             paragraph: {
-              value: 'Natural language assessments builds rapport and delivers the most honest feedback.'
+              value: 'Natural language assessments build rapport and delivers the most honest feedback.'
             }
           }
         }

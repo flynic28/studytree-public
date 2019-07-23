@@ -63,7 +63,7 @@ export class MeetLeonComponent implements OnInit {
               cssClass: 'mb-20'
             },
             paragraph: {
-              value: 'Leon is an AI powered coach that works with each user on a 1 on 1 basis. He\'ll identify performance signals, set goals, and deploy intervention strategies before escalating to human involvment'
+              value: 'Leon is an AI-powered coach that works with each user on a one on one basis. He\'ll identify performance signals, set goals, and deploy intervention strategies before escalating to human involvment'
             }
           }
         }
@@ -99,7 +99,7 @@ export class MeetLeonComponent implements OnInit {
               cssClass: 'mb-20'
             },
             paragraph: {
-              value: 'Leon\'s intelligence continues to grow from the thousands of students am employees that talk with him on a daily basis. This allows Leon to identify performance issues earlier and propose the best resolutions.'
+              value: 'Leon\'s intelligence continues to grow from the thousands of students and employees that talk with him on a daily basis. This allows Leon to identify performance issues earlier and propose the best resolutions.'
             }
           }
         }

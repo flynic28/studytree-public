@@ -98,7 +98,7 @@ export class HigherEducationComponent implements OnInit {
               cssClass: 'mb-20'
             },
             paragraph: {
-              value: 'When student need a helping hand, or start to slip, we got them covered. Leon analyzes students\' grades and behavioral patterns to construct customized recommendations to improve their academic performance.'
+              value: 'When students need a helping hand, or start to slip, we got them covered. Leon analyzes students\' grades and behavioral patterns to construct customized recommendations to improve their academic performance.'
             }
           }
         }
@@ -128,7 +128,7 @@ export class HigherEducationComponent implements OnInit {
               cssClass: 'mb-20'
             },
             paragraph: {
-              value: 'StudyTree serves administrators by providing managerial access to the application, which enables insight to useful statistics and an overview of each student\'s individual progress'
+              value: 'StudyTree serves administrators by providing managerial access to the application, which enables insight to useful statistics and an overview of each student\'s individual progress.'
             }
           }
         }
